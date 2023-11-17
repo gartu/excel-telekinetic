@@ -3,7 +3,7 @@
   "build": {
     "beforeBuildCommand": "bun run build",
     "beforeDevCommand": "bun run start",
-    "devPath": "http://localhost:4200",
+    "devPath": "http://127.0.0.1:4200",
     "distDir": "../dist"
   },
   "package": {
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "ch.herzog.excel-telekinetic",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -42,6 +42,9 @@
       "shortDescription": "",
       "targets": "all",
       "windows": {
+        "webviewInstallMode": {
+          "type": "offlineInstaller"
+        },
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
         "timestampUrl": ""
